@@ -1,0 +1,22 @@
+{
+  "name": "angular-sample",
+  "version": "1.0.0",
+  "description": "This repo contains basic samples of AngularJs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sguha-work/angular-sample.git"
+  },
+  "author": "Angshu Guha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sguha-work/angular-sample/issues"
+  },
+  "homepage": "https://github.com/sguha-work/angular-sample#readme",
+  "dependencies": {
+    "angular": "^1.6.1"
+  }
+}
