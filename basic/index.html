@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
+        <script type="text/javascript" src="../node_modules/angular/angular.min.js"></script>
+    </head>
+    <body data-ng-app="">
+        <label class="label_header" for="text display"> This is a very basic angular example, whatever you write inside the text box will reflect on the below coloured div</label>
+        <br><br><br><br>
+        <label class="label_header2" for="">Write something here&nbsp;&nbsp;</label><input type="text" name="" data-ng-model="displayText"/>
+        <br><br><br>
+        <label for="">Here is whatever you typed &nbsp;</label>
+        <br><br>
+        <div>{{displayText}}</div>
+    </body>
+</html>
