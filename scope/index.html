@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
+        <script type="text/javascript" src="../node_modules/angular/angular.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <!-- If we provide an app name here we have to define the app using angular.module -->
+    <body data-ng-app="myApplication">
+        <div data-ng-controller='myController'>
+            <label for="">The following value will be changed 2times each second</label>
+            <br>
+            <br>
+            <label for="">{{myVar}}</label>
+        </div>
+        <div>
+            <label for=""> This div is out side of myController context so following label value will not be displayed</label>
+            {{myVar}}
+        </div>
+    </body>
+</html>
