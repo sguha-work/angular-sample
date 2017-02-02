@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="../node_modules/angular/angular.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <!-- If we provide an app name here we have to define the app using angular.module -->
+    <body data-ng-app="myApplication">
+        <div data-ng-controller="myController">
+            <p>Enter an amount between 1rs to 100rs below, if it is 1rs to 50rs 3% of amount will be deducted and if it is 51rs to 100rs 5% will be deduced </p>
+            <label for="">Enter the amount here </label><input type="number" data-ng-model="amount"/>
+            <p>
+                <label for="">The deduction percentage is here  </label><label for="">{{deductionPercentage}}</label>
+            </p>
+            <p>
+                <label for="">The deducted amount is here  </label><label for="">{{deductedAmount}}</label>
+            </p>
+            <p>
+                <label for="">The final amount is here  </label><label for="">{{finalAmount}}</label>
+            </p>
+        </div>
+    </body>
+</html>

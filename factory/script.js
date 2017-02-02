@@ -1,18 +1,15 @@
 var myApplication = angular.module("myApplication", []);
 
-myApplication.factory('myService', function() {
-    return {
-        calculateAndReturnDeductionPercentage : (function(amount) {
-            if(amount>=1 && amount<=50) {
-                return 3;
-            } else if(amount>=51 && amount<=100) {
-                return 5;
-            } else {
-                return 0;
-            }
-        })    
-    };
-    
+myApplication.service('myService', function() {
+    this.calculateAndReturnDeductionPercentage = (function(amount) {
+        if(amount>=1 && amount<=50) {
+            return 3;
+        } else if(amount>=51 && amount<=100) {
+            return 5;
+        } else {
+            return 0;
+        }
+    });
 });
 
 myApplication.controller('myController', function($scope, myService) {
